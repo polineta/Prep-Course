@@ -10,7 +10,7 @@ const nuevoNum = 4;
 const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - 5 === 5;
+const nuevaResta = 10 - 5 === 2;
 
 // Resuelve el siguiente problema matemático:
 const nuevaMultiplicacion = 10 * 4 === 40 ;
@@ -109,6 +109,8 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
+  obtenerResto=x % y;
+  return obtenerResto
   
 }
 
@@ -116,7 +118,10 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (esPar%2 == 0){
+    return true;
+  }
+  else{return false;}
 }
 
 function esImpar(num) {
