@@ -28,8 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  var cadena = str;
-  return cadena;
+  return str;
   
 }
 
@@ -37,30 +36,29 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var resultadoSuma= x + y;
-  return resultadoSuma;
+  return x + y;
 
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  var resultadoResta= x-y;
-  return resultadoResta  ;
+  
+  return x-y;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  var resultadoMulti= x*y;
-  return resultadoMulti;
+  
+  return x*y;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  var resultadoDivision=x/y;
-  return resultadoDivision;
+  
+  return x/y;
 }
 
 function sonIguales(x, y) {
@@ -70,8 +68,9 @@ function sonIguales(x, y) {
   if (x==y) {
     return true;
   }
-  return false;
-
+  else {
+    return false;
+  }
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -81,7 +80,8 @@ function tienenMismaLongitud(str1, str2) {
   if(str1.length==str2.length){
     return true;
   }
-   return false;
+   else {return false;
+   }
 }
 
 function menosQueNoventa(num) {
@@ -91,7 +91,9 @@ function menosQueNoventa(num) {
   if(num < 90){
     return true;
   }
-  return false;
+  else{
+    return false;
+  }
   
 }
 
@@ -102,15 +104,17 @@ function mayorQueCincuenta(num) {
   if (num>50){
     return true;
   }
-  else{return false;}
+  else{
+    return false;
+  }
   
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  Resto=x % y;
-  return Resto;
+    return x % y;
+
   
 }
 
@@ -130,8 +134,10 @@ function esImpar(num) {
   // Tu código:
   if (num % 2==0){
     return false;
-  }return true;
-  
+  }
+  else {
+     return true;
+  }  
 }
 
 function elevarAlCuadrado(num) {
@@ -178,9 +184,15 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero==0){"es falso"};
-  if (numero < 0){return "es negativo"};
-  if (numero>0){return "es positivo"};
+  if (numero===0){
+    return false
+  };
+  if (numero > 0){
+    return "Es positivo"
+  };
+  if  (numero < 0){
+    return "Es negativo"
+  };
   
 }
 
@@ -195,14 +207,14 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return nombre," ",apellido;
+  return nombre+" "+apellido;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola "+nombre+ "!";
+  return "Hola "+nombre+ "!";
   
 }
 
@@ -232,7 +244,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return euro*1,2;
+  return euro*1.20;
   
 }
 
@@ -243,15 +255,24 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-    if (letra.length>1) {return "dato incorrecto"}
-    else if (letra==="a") {return"es vocal"}
-    else if (letra==="e") {return"es vocal"}
-    else if (letra==="i") {return"es vocal"}
-    else if (letra==="o") {return"es vocal"}
-    else if (letra==="u") {return"es vocal"}
-    else {return "dato incorrecto"}
+    if (letra.length>1) {
+      return "Dato incorrecto"
+    }
+    switch  (letra) {
+    case "a":
+       return"Es vocal";
+    case "e":
+       return"Es vocal";
+    case "i":
+       return"Es vocal";
+    case "o":
+       return"Es vocal";
+    case "u":
+       return"Es vocal";
+    default:
+       return "Dato incorrecto";
     
-    
+    }
 }
 
 
